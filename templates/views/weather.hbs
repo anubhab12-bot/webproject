@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+</head>
+
+<body>
+  {{>navbar}}
+  <div class="container-fluid main_header">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        <div class="main_content">
+            <form action="" class="temp_form">
+                <input type="text" name="" id="cityName" placeholder="Enter your city name" autocomplete="off">
+                <input type="submit" value="search" id="submitBtn"/>
+            </form>
+        </div>
+        <div class="tempInformation">
+            <div class="top_layer">
+                <p id="day">Tuesday</p>
+                <p id="today_data">11 Nov</p>
+            </div>
+            <div class="main_layer">
+                <p id="city_name">Get Output Here</p>
+                <div class="middle_layer ">
+                    <p id="temp"><span id="temp_val">0</span> <sup>o</sup>C</p>
+                    <p id="temp_status"><i class="fa fa-cloud" area-hidden="true"></i></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{>footer}}
+
+  <script src="js/main.js"></script>
+  {{!-- <script>
+    const getCurrentDay = () => {
+        let weekday = new Array(7)
+        weekday[0] = 'sunday';
+        wee
+    }
+  </script> --}}
+</body>
+
+</html>
